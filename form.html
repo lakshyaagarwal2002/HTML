@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+.form{
+    color: blueviolet;
+}
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+        <div>
+            <p id="para">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus voluptatum saepe doloribus placeat non quos ducimus nesciunt architecto corporis nisi praesentium autem vitae sint quia nulla unde necessitatibus, aliquid deserunt rerum? Repellat blanditiis non, ex optio incidunt commodi dolores eius, eaque debitis maxime tenetur sunt fugiat doloribus suscipit corrupti quaerat porro, pariatur autem dolor enim recusandae est iusto accusamus ipsum. Officiis iure inventore corrupti, quidem accusantium quaerat aliquam dignissimos esse excepturi. Aperiam vero, quod accusamus blanditiis temporibus, asperiores harum qui non beatae ut consequuntur facere sint ad dolorem, maiores ea obcaecati quas delectus odio nostrum! Fugiat culpa dolore repudiandae, ad doloremque non nulla tenetur eius, nemo temporibus unde laborum quas iure quidem in vitae, ducimus odit alias! Ex, dolore totam? Eos nisi iste aspernatur ullam rem, aut repellat odio doloremque veritatis voluptate maxime exercitationem rerum perspiciatis nihil, non odit qui neque, praesentium illo vero molestias adipisci expedita possimus. Officiis, nostrum? Voluptatibus ullam necessitatibus nihil odio soluta a aut veritatis culpa eos praesentium fugiat doloribus, ad tempora quisquam, eum odit ea! Illum in saepe explicabo cumque eligendi ipsam omnis magnam dignissimos, eveniet officia dicta exercitationem? Blanditiis quia quo earum suscipit non eos minus voluptas dolorem praesentium voluptatum! Amet, architecto, laudantium reiciendis voluptates quia ipsa optio alias molestiae harum officia quae debitis eligendi error sapiente maiores animi labore magni inventore possimus nesciunt doloribus asperiores tenetur! Nesciunt inventore unde a adipisci culpa hic quidem. Deserunt harum quasi, commodi ipsum quaerat exercitationem minus officiis animi suscipit neque blanditiis nemo corporis officia rerum perspiciatis eveniet, illo veniam quis! Laudantium architecto fugit dolores deleniti harum a hic molestiae ea est incidunt dignissimos, nesciunt expedita praesentium numquam illo similique obcaecati. Esse alias eveniet illum veritatis dolorum natus laboriosam debitis consequuntur, aspernatur, magni dolore iure at voluptatum incidunt minus, doloremque quo recusandae consectetur suscipit! Dignissimos impedit eius reiciendis, a itaque optio, officiis aspernatur animi nam repellendus nostrum recusandae, voluptatum eaque veniam dolore accusamus minima! Dolorum enim, commodi minima, modi vel mollitia sequi molestias eos voluptatum quam ea, odit autem nisi quae quo velit quis dolores. Harum illum consequatur itaque, consequuntur rem excepturi minus soluta ad repellat laudantium tempora unde! Laborum aspernatur recusandae quis, temporibus iure, animi soluta aliquid repellendus quos sint commodi dolorum vel voluptatibus omnis ab ducimus sunt reprehenderit labore esse numquam, culpa quia. Perferendis, culpa. Ullam fugiat dolorem amet, maxime adipisci iure at! Quaerat beatae ea quas ullam porro esse at iusto accusamus blanditiis expedita neque nihil, et qui deleniti aperiam, tenetur maxime. Tenetur, perspiciatis veniam eveniet sed esse illo facilis quibusdam cumque omnis molestiae. Molestiae, hic assumenda dignissimos aperiam veniam voluptas quaerat voluptatem facere possimus sit, pariatur quae soluta obcaecati ipsum quos, a minima quis harum accusantium vel esse. Totam earum soluta nihil! Eos id aspernatur officia odit cum similique et non ipsa aperiam vitae sunt perspiciatis ab laudantium officiis, laboriosam corrupti iste unde quod quae, consequuntur recusandae? Excepturi ducimus, illum architecto nihil vel explicabo doloremque nulla rerum aliquam quibusdam! Laudantium facere dignissimos, totam itaque officiis maiores nobis dolorem sequi nisi similique amet sapiente vel odio corrupti natus tempore iste nulla molestias sit quod doloremque optio.</p>
+            <button id="btn" onclick="showhide()">show/hide</button>
+        </div>
+       <div class="form"> <label for="Name">Name:</label>
+        <input type="text" id="Name" required></div>
+       <div class="form"> <label for="Email">Email:</label>
+        <input type="email" id="Email"></div>
+       <div class="form"> <label for="Mobile">Contact number:</label>
+        <input type="" id="Mobile"></div>
+       <div class="form"> <label for="checkbox">Are you eligible?</label>
+        <input type="checkbox" name="Eligibilty" id="checkbox" checked></div>
+       <div class="form"> Gender: <input type="radio" name="mygender" checked>Male<input type="radio" name="mygender">Female<input type="radio" name="mygender">Other</div>
+        <h5>Describe Yourself</h5>
+        <textarea name="mytext"  cols="30" rows="10" placeholder="Type something" >
+        </textarea><br>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </form>
+    <script>
+        function showhide(){
+
+            let btn = document.getElementById("btn");
+            let para = document.getElementById("para");
+            if(para.style.display!='none')
+            {
+
+                para.style.display= 'none';
+            }
+            else{
+                para.style.display='block';
+            }
+        }
+
+    </script>
+</body>
+</html>
