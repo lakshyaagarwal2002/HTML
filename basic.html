@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .ul{
+            padding: 25px;
+            margin: 22px;
+            width: 130px;
+            border: 2px solid gray;
+            border-radius: 10px;
+        }
+        .ol{
+            padding: 20px;
+            margin: 22px;
+            width: 150px;
+            border: 2px solid rgb(49, 32, 32);
+            border-radius: 12px;
+        }
+        img{
+            border: 2px solid rgb(80, 66, 66);
+        }
+        p{
+            color: rgb(95, 69, 69);
+        }
+        body{
+            background-color: rgb(230 215 243);
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+        table,th,td{
+            padding: 20px;
+            margin: 20px;
+            border: 2px solid rgb(36, 27, 27);
+            border-collapse:collapse;
+            border-style:dashed;
+        }
+    </style>
+</head>
+<body>
+    <h3>LAKSHYA AGARWAL</h3>
+    <p>I am <strong>Lakshya Agarwal</strong> and I am from <strong>MEERUT,UP</strong>.I am currently pursuing btech from JUET,GUNA <br>
+    I am studing <em>CSE</em>. I have done my schooling from <strong>DAYAWATI MODI ACADEMY,MODIPURAM,MEERUT</strong>.</p><hr>
+    <img src="/lakshya new.jpg" height="200px" width="200px" alt="LAKSHYA AGARWAL"><br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Semester</th>
+                <th>Cgpa</th>
+            </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1st sem</td>
+            <td>9.2</td>
+            </tr>
+            <tr>
+                <td>2nd sem</td>
+            <td>9.3</td>
+            </tr>
+            <tr>
+                <td>3th sem</td>
+            <td>8.6</td>
+            </tr>
+            <tr>
+                <td>4th sem</td>
+            <td>8.7</td>
+            </tr>
+    </tbody>
+        
+    </table>
+    <br>
+    <h4>Skills</h4>
+    <ul type="circle" class="ul">
+        <li>C++</li>
+        <li>Java</li>
+        <li>Html 5</li>
+        <li>Css 3</li>
+        <li>Java Script</li>
+    </ul>
+    <h4>Sports Played</h4>
+    <ol type="i" class="ol">
+
+        <li>Cricket</li>
+        <li>Football</li>
+        <li>Badminton</li>
+        <li>Table Tennis</li>
+        <li>Volleyball</li>
+    </ol>
+    <div id="demo">
+
+        <ul>
+            <li>About</li>
+            <li>contact</li>
+            <li>help</li>
+            <li>info</li>
+            <li>home</li>
+        </ul>
+    </div>
+    <script>
+        console.log("Hello");
+        let a=20
+        console.log(a);
+        let string = 'Hello';
+        console.log(string);
+        let b="Lakshya";
+        let c="JUET";
+        console.log(`Hello I am ${b} from ${c}`);
+        console.log(b+c);
+        let k = b.toUpperCase();
+        console.log(k);
+        let l=c.toLowerCase();
+        console.log(l);
+        let f= b.slice(1,5);
+        console.log(f);
+        document.getElementById("demo").innerHTML="My First JAVASCRIPT";
+        alert("ok daba bro");
+        prompt("naam likh","naam likh ke ok dabaiyo");
+        let delete1 = confirm("delete karni hai kya?");
+        if(delete1)
+        {
+            console.log("ho gayi delete");
+        }
+        else{
+            console.log("acchi hai mat kar");
+        }
+        console.log(delete1);
+        for(let i=0;i<4;i++)
+        {
+            for(let j=0;j<4;j++)
+            {
+                console.log("*");
+            }
+            console.log("\n");
+        }
+        let daba = ["ab","bc","cd","de"];
+        for(Element of daba)
+        {
+            console.log("hi"+ Element+ "hi");
+        }
+        let s = "";
+            let baba = [0,1,2,3];
+            for(Element of baba)
+            {
+                for(Element of baba)
+                {
+                    s = s+"*";
+                }
+                s = s+ "\n";
+            }
+            console.log(s);
+           let demo =  document.getElementById('demo');
+            console.log(demo);
+            let y = document.getElementById('nav');
+            console.log(y);
+    </script>
+</body>
+</html>
